@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nabil Qualita Akhsan — Portfolio |
+    Mahasiswa S1 Teknik Informatika UNESA</title>
+  <meta name="description"
+    content="Portofolio resmi Nabil Qualita Akhsan - Mahasiswa S1 Teknik Informatika Universitas Negeri Surabaya (UNESA). Frontend Developer & UI/UX Designer." />
+
+
+  <link rel="shortcut icon" href="assets/logo/Logo.jpg" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="dist/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Interactive Cosmic Starfield Background Canvas -->
+  <canvas id="starfieldCanvas"></canvas>
+
+  <aside class="floating-coffee-badge" id="floatingCoffeeBtn" title="Traktir Kopi / Support Nabil">
+    <div class="coffee-pill">
+      <span class="coffee-icon">☕</span>
+      <span class="coffee-text">Coffee</span>
+      <span class="coffee-amount"></span>
+    </div>
+  </aside>
+
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-pill">
+        <a href="#home" class="nav-brand">
+          <div class="nav-avatar-wrap">
+            <img src="assets 2/Avatar/Poto.jpeg" alt="Nabil Qualita Akhsan" class="nav-avatar" />
+          </div>
+          <span class="nav-brand-name">NABIL QUALITA AKHSAN</span>
+        </a>
+
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#work" class="nav-item-link">Work</a></li>
+            <li><a href="#capabilities" class="nav-item-link">What I Can Do</a></li>
+            <li><a href="#about" class="nav-item-link">About</a></li>
+            <li><a href="#achievements" class="nav-item-link">Achievement</a></li>
+            <li><a href="#contact" class="nav-item-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode" title="Ganti Tema">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <a href="#contact" class="btn btn-hire">Hire Me</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-center-box" data-aos="fade-up" data-aos-duration="800">
+
+        <!-- Center Hero Avatar with Sci-Fi Astral Astrolabe Orbit Effects (No Gaudy Yellow Border on Photo) -->
+        <div class="hero-avatar-astral-system">
+          <div class="astral-orbit-outer"></div>
+          <div class="astral-orbit-mid"></div>
+          <div class="astral-orbit-inner"></div>
+          <div class="astral-nebula-glow"></div>
+          <span class="astral-marker marker-top">✦</span>
+          <span class="astral-marker marker-bottom">✦</span>
+          <span class="astral-marker marker-left">✦</span>
+          <span class="astral-marker marker-right">✦</span>
+          <div class="hero-portrait-wrap">
+            <img src="assets 2/Avatar/Poto.jpeg" alt="Nabil Qualita Akhsan - Mahasiswa Teknik Informatika UNESA"
+              class="hero-portrait-img" width="176" height="176" />
+          </div>
+        </div>
+
+        <div class="hero-status-pill">
+          <span class="pulse-dot"></span> Available for Web Projects &amp; Internships
+        </div>
+
+        <h1 class="hero-main-title">
+          Hi, I'm <span class="text-highlight">Nabil Qualita Akhsan</span>
+        </h1>
+        <p class="hero-main-subtitle">
+          Mahasiswa S1 Teknik Informatika di <strong>Universitas Negeri Surabaya (UNESA)</strong> yang berfokus pada
+          Frontend Web Development &amp; Perancangan UI/UX Modern.
+        </p>
+
+        <div class="hero-btn-row">
+          <a href="#work" class="btn btn-primary-dark">
+            <span>Explore Works</span> <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1HtTWsuVyyjnTVGBh8mW4gyd-417hV0c8/view?usp=drivesdk" target="_blank"
+            rel="noopener noreferrer" class="btn btn-outline-dark">
+            <i class="fa-regular fa-file-pdf"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="hero-quick-meta">
+          <div class="quick-meta-item">
+            <i class="fa-solid fa-graduation-cap"></i> S1 Teknik Informatika &bull; UNESA
+          </div>
+          <div class="quick-meta-divider">&bull;</div>
+          <div class="quick-meta-item">
+            <i class="fa-solid fa-location-dot"></i> Surabaya, Indonesia
+          </div>
+          <div class="quick-meta-divider">&bull;</div>
+          <div class="quick-meta-item">
+            <i class="fa-solid fa-code"></i> Frontend &amp; UI/UX
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-block" id="work">
+    <div class="container">
+
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-tag-label">◆ ARCHIVE OF LIGHTCONES ◆</span>
+        <div class="section-heading-row">
+          <div>
+            <h2 class="section-main-heading">Lightcone Database &amp; Works</h2>
+            <p class="section-lead-text">
+              Koleksi artifak digital, sistem rekayasa web, dan karya teknis yang telah saya rancang dan bangun.
+            </p>
+          </div>
+          <a href="https://github.com/nabilqualitaakhsan" target="_blank" rel="noopener noreferrer"
+            class="view-more-link">
+            <span>Explore All Lightcones</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="work-gallery-grid">
+
+
+        <article class="work-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="work-visual-box">
+            <div class="work-visual-gradient grad-1"></div>
+            <div class="work-visual-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="work-watermark">PORTFOLIO V2</span>
+            </div>
+            <div class="work-badge">Web Engineering</div>
+          </div>
+          <div class="work-card-content">
+            <div class="work-tech-tags">
+              <span class="work-tag">HTML5</span>
+              <span class="work-tag">CSS3</span>
+              <span class="work-tag">JavaScript</span>
+              <span class="work-tag">2026</span>
+            </div>
+            <h3 class="work-card-title">Project HTML / CSS / JavaScript (Portofolio Website)</h3>
+            <p class="work-card-desc">
+              Website portofolio interaktif berkinerja tinggi dengan arsitektur responsif, dual-theme (dark &amp; light
+              mode), serta interaksi halus tanpa dependensi berlebih.
+            </p>
+            <div class="work-card-footer">
+              <a href="#home" class="work-action-link">
+                Lihat Live <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/nabilqualitaakhsan" target="_blank" rel="noopener noreferrer"
+                class="work-icon-btn" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="work-visual-box">
+            <div class="work-visual-gradient grad-2"></div>
+            <div class="work-visual-icon">
+              <i class="fa-solid fa-layer-group"></i>
+              <span class="work-watermark">STUDENT HUB UI</span>
+            </div>
+            <div class="work-badge">UI/UX Design</div>
+          </div>
+          <div class="work-card-content">
+            <div class="work-tech-tags">
+              <span class="work-tag">Figma</span>
+              <span class="work-tag">Wireframing</span>
+              <span class="work-tag">Prototyping</span>
+            </div>
+            <h3 class="work-card-title">Informatics Student Hub UI</h3>
+            <p class="work-card-desc">
+              Perancangan antarmuka portal terintegrasi mahasiswa Informatika UNESA: dashboard jadwal kuliah, tracking
+              tugas, dan ruang kolaborasi akademik.
+            </p>
+            <div class="work-card-footer">
+              <a href="https://dribbble.com/nabil-qualita-akhsan" target="_blank" rel="noopener noreferrer"
+                class="work-action-link">
+                Lihat di Dribbble <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://dribbble.com/nabil-qualita-akhsan" target="_blank" rel="noopener noreferrer"
+                class="work-icon-btn" title="Dribbble Showcase">
+                <i class="fa-brands fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="work-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="work-visual-box">
+            <div class="work-visual-gradient grad-3"></div>
+            <div class="work-visual-icon">
+              <i class="fa-solid fa-sliders"></i>
+              <span class="work-watermark">UI COMPONENTS</span>
+            </div>
+            <div class="work-badge">JavaScript Lib</div>
+          </div>
+          <div class="work-card-content">
+            <div class="work-tech-tags">
+              <span class="work-tag">Vanilla JS</span>
+              <span class="work-tag">DOM Manipulation</span>
+              <span class="work-tag">Micro-UI</span>
+            </div>
+            <h3 class="work-card-title">Interactive Web Components</h3>
+            <p class="work-card-desc">
+              Koleksi komponen antarmuka web modern: modal interaktif, tema dinamis, copy-to-clipboard, dan form
+              validation berbasis JavaScript murni.
+            </p>
+            <div class="work-card-footer">
+              <a href="https://github.com/nabilqualitaakhsan" target="_blank" rel="noopener noreferrer"
+                class="work-action-link">
+                Source Code <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/nabilqualitaakhsan" target="_blank" rel="noopener noreferrer"
+                class="work-icon-btn" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-block" id="capabilities">
+    <div class="container">
+
+      <div class="capabilities-layout">
+
+        <div class="capabilities-intro" data-aos="fade-up">
+          <span class="section-tag-label">◆ COMBAT TRACES &amp; ARSENAL ◆</span>
+          <h2 class="section-main-heading">Traces &amp; Capabilities</h2>
+          <p class="capabilities-desc">
+            Kombinasi kemampuan teknis (hard skills) dalam rekayasa web &amp; produktivitas digital, serta kecakapan
+            interpersonal (soft skills) untuk kolaborasi tim yang solid.
+          </p>
+
+          <div class="tools-icon-grid">
+            <div class="tool-icon-item" title="HTML5"><i class="fa-brands fa-html5" style="color:#e34f26;"></i></div>
+            <div class="tool-icon-item" title="CSS3"><i class="fa-brands fa-css3-alt" style="color:#264de4;"></i></div>
+            <div class="tool-icon-item" title="JavaScript"><i class="fa-brands fa-js" style="color:#f7df1e;"></i></div>
+            <div class="tool-icon-item" title="Python"><i class="fa-brands fa-python" style="color:#3776ab;"></i></div>
+            <div class="tool-icon-item" title="Microsoft Word"><i class="fa-solid fa-file-word"
+                style="color:#2b579a;"></i></div>
+            <div class="tool-icon-item" title="Microsoft Excel"><i class="fa-solid fa-file-excel"
+                style="color:#217346;"></i></div>
+            <div class="tool-icon-item" title="Google Workspace"><i class="fa-brands fa-google"
+                style="color:#4285f4;"></i></div>
+            <div class="tool-icon-item" title="Canva"><i class="fa-solid fa-palette" style="color:#00c4cc;"></i></div>
+            <div class="tool-icon-item" title="Git"><i class="fa-brands fa-git-alt" style="color:#f05032;"></i></div>
+            <div class="tool-icon-item" title="GitHub"><i class="fa-brands fa-github" style="color:#ffffff;"></i></div>
+            <div class="tool-icon-item" title="VS Code"><i class="fa-solid fa-code" style="color:#007acc;"></i></div>
+            <div class="tool-icon-item" title="Figma"><i class="fa-brands fa-figma" style="color:#f24e1e;"></i></div>
+          </div>
+        </div>
+
+
+        <div class="capabilities-cards">
+
+
+          <div class="capability-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="cap-card-header">
+              <span class="cap-number">01</span>
+              <div class="cap-icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+            </div>
+            <h3 class="cap-card-title">Hard Skills (2026)</h3>
+            <p class="cap-card-text">
+              Keahlian teknis dalam pengembangan web interaktif, pemrograman, manipulasi data, otomasi dokumen
+              perkantoran, dan perancangan media digital visual.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag"><i class="fa-brands fa-html5"></i> HTML &amp; CSS</span>
+              <span class="cap-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="cap-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="cap-tag"><i class="fa-solid fa-file-word"></i> Microsoft Word</span>
+              <span class="cap-tag"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+              <span class="cap-tag"><i class="fa-brands fa-google"></i> Google Workspace</span>
+              <span class="cap-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+            </div>
+          </div>
+
+
+          <div class="capability-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="cap-card-header">
+              <span class="cap-number">02</span>
+              <div class="cap-icon-box">
+                <i class="fa-solid fa-users-gear"></i>
+              </div>
+            </div>
+            <h3 class="cap-card-title">Soft Skills (2026)</h3>
+            <p class="cap-card-text">
+              Karakter interpersonal dan manajerial yang mendukung efisiensi kolaborasi tim, komunikasi transparan, dan
+              pemecahan masalah secara terstruktur.
+            </p>
+            <div class="cap-tags">
+              <span class="cap-tag">Communication</span>
+              <span class="cap-tag">Teamwork</span>
+              <span class="cap-tag">Leadership</span>
+              <span class="cap-tag">Time Management</span>
+              <span class="cap-tag">Problem Solving</span>
+              <span class="cap-tag">Adaptability</span>
+              <span class="cap-tag">Responsibility</span>
+              <span class="cap-tag">Organization</span>
+              <span class="cap-tag">Attention to Detail</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <div class="about-section-wrap" data-aos="fade-up">
+
+    <span class="section-tag-label">◆ ASTRAL EXPRESS ARCHIVE ◆</span>
+    <h2 class="section-main-heading">Trailblazer Dossier &amp; Identity</h2>
+
+    <div class="about-card-box">
+
+      <div class="about-profile-header">
+        <div class="about-avatar-col">
+          <img src="assets 2/Avatar/Poto.jpeg" alt="Nabil Qualita Akhsan" class="about-avatar-img" />
+          <div>
+            <div class="about-name-row">
+              <h3 class="about-name">Nabil Qualita Akhsan</h3>
+              <i class="fa-solid fa-circle-check about-verified-badge" title="Verified Profile"></i>
+            </div>
+            <div class="about-title-role">Mahasiswa S1 Teknik Informatika &bull; Frontend Enthusiast</div>
+          </div>
+        </div>
+
+
+        <div class="about-stats-row">
+          <div class="about-stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">PROJECTS</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">CERTIFICATES</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="stat-number">2030</div>
+            <div class="stat-label">UNESA GRADUATION</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="academic-identity-bar">
+        <div class="identity-badge-item">
+          <span class="id-badge-key"><i class="fa-solid fa-id-card"></i> NIM:</span>
+          <span class="id-badge-val highlight-nim">26051204020</span>
+        </div>
+        <div class="identity-badge-item">
+          <span class="id-badge-key"><i class="fa-solid fa-book-bookmark"></i> Program Studi:</span>
+          <span class="id-badge-val">S1 Teknik Informatika</span>
+        </div>
+        <div class="identity-badge-item">
+          <span class="id-badge-key"><i class="fa-solid fa-building-columns"></i> Kampus:</span>
+          <span class="id-badge-val">Universitas Negeri Surabaya (UNESA)</span>
+        </div>
+        <div class="identity-badge-item">
+          <span class="id-badge-key"><i class="fa-solid fa-users"></i> Status:</span>
+          <span class="id-badge-val badge-active">Mahasiswa Aktif</span>
+        </div>
+      </div>
+
+      <div class="about-bio-text">
+        <p>
+          Saya adalah mahasiswa program sarjana (S1) <strong>Teknik Informatika di Universitas Negeri Surabaya
+            (UNESA)</strong>, yang memiliki ketertarikan mendalam pada rekayasa perangkat lunak front-end,
+          arsitektur web modern, dan perancangan antarmuka pengguna digital.
+        </p>
+        <p>
+          Saya menikmati proses mengubah ide dan kebutuhan konseptual menjadi solusi digital yang nyata,
+          terstruktur, serta memiliki nilai estetika tinggi. Melalui eksplorasi mandiri dan studi perkuliahan, saya
+          terus memperdalam kemampuan dalam ekosistem JavaScript, framework modern, optimasi performa web, dan alur
+          kolaborasi berbasis Git.
+        </p>
+      </div>
+
+
+      <div class="about-resume-action">
+        <a href="https://drive.google.com/file/d/1HtTWsuVyyjnTVGBh8mW4gyd-417hV0c8/view?usp=drivesdk" target="_blank"
+          rel="noopener noreferrer" class="about-resume-link">
+          <span>Download my resume</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+
+      <div class="about-activity-pills">
+        <div class="activity-pill-item">
+          <i class="fa-solid fa-hammer"></i>
+          <div>
+            <span class="act-title">Building</span>
+            <span class="act-sub">Web &amp; Digital Projects</span>
+          </div>
+        </div>
+        <div class="activity-pill-item">
+          <i class="fa-solid fa-compass"></i>
+          <div>
+            <span class="act-title">Exploring</span>
+            <span class="act-sub">UI/UX Systems &amp; Frameworks</span>
+          </div>
+        </div>
+        <div class="activity-pill-item">
+          <i class="fa-solid fa-book-open-reader"></i>
+          <div>
+            <span class="act-title">Learning</span>
+            <span class="act-sub">Full-Stack &amp; CS Fundamentals</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+  </section>
+
+  <!-- BAGIAN 4: ACHIEVEMENT (WAJIB ADA SESUAI BUKU PANDUAN HALAMAN 1) -->
+  <section class="section-block" id="achievements">
+    <div class="container">
+
+      <div class="section-title-wrap" data-aos="fade-up">
+        <span class="section-tag-label">◆ STELLAR TRIUMPHS &bull; RECORDS ◆</span>
+        <div class="section-heading-row">
+          <div>
+            <h2 class="section-main-heading">Achievements &amp; Milestones</h2>
+            <p class="section-lead-text">
+              Pencapaian, sertifikasi kompetensi, dan rekam jejak perkembangan diri dalam bidang teknologi informasi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements-grid">
+
+        <!-- Achievement 1: BIONIX & Chernival (ITS 2025) -->
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="ach-icon-col">
+            <div class="ach-icon-circle">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+          </div>
+          <div class="ach-info-col">
+            <div class="ach-meta-row">
+              <span class="ach-year">2025</span>
+              <span class="ach-issuer">Institut Teknologi Sepuluh Nopember (ITS)</span>
+            </div>
+            <h3 class="ach-title">BIONIX &amp; Chernival</h3>
+            <p class="ach-desc">
+              Berpartisipasi aktif sebagai peserta dalam rangkaian kompetisi bergengsi tingkat nasional di bidang
+              teknologi informasi dan rekayasa yang diselenggarakan oleh Institut Teknologi Sepuluh Nopember (ITS).
+            </p>
+            <div class="ach-status-badge">
+              <i class="fa-solid fa-certificate"></i> Participant &bull; Tingkat Nasional
+            </div>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="ach-icon-col">
+            <div class="ach-icon-circle">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+          </div>
+          <div class="ach-info-col">
+            <div class="ach-meta-row">
+              <span class="ach-year">2025</span>
+              <span class="ach-issuer">Institut Teknologi Bandung (ITB)</span>
+            </div>
+            <h3 class="ach-title">Impact 4.0</h3>
+            <p class="ach-desc">
+              Berpartisipasi aktif dalam ajang kompetisi dan eksplorasi inovasi transformasi digital Impact 4.0 tingkat
+              nasional yang diselenggarakan oleh Institut Teknologi Bandung (ITB).
+            </p>
+            <div class="ach-status-badge">
+              <i class="fa-solid fa-certificate"></i> Participant &bull; Tingkat Nasional
+            </div>
+          </div>
+        </div>
+
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="ach-icon-col">
+            <div class="ach-icon-circle">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+          </div>
+          <div class="ach-info-col">
+            <div class="ach-meta-row">
+              <span class="ach-year">2026</span>
+              <span class="ach-issuer">UNESA &bull; S1 Teknik Informatika</span>
+            </div>
+            <h3 class="ach-title">Project HTML / CSS / JavaScript (Portofolio Website)</h3>
+            <p class="ach-desc">
+              Berhasil merancang, membangun, dan mempublikasikan website portofolio interaktif yang responsif dengan
+              standar semantik modern, dual theme (dark &amp; light mode), dan performa optimal.
+            </p>
+            <div class="ach-status-badge">
+              <i class="fa-solid fa-circle-check"></i> Project Milestone &bull; Web Engineering
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section-block" id="contact">
+    <div class="container">
+
+      <div class="contact-wrap" data-aos="fade-up">
+
+
+        <div class="contact-left-col">
+          <span class="section-tag-label">◆ IPC TRANSMISSION FREQUENCY ◆</span>
+          <h2 class="contact-big-title">INITIATE WARP<br />TRANSMISSION</h2>
+          <p class="contact-lead-desc">
+            Looking for the next problem worth solving. I'm open to opportunities where I can contribute to software
+            engineering, web development, and digital workflows.
+          </p>
+          <div class="contact-resume-wrap">
+            <a href="https://drive.google.com/file/d/1HtTWsuVyyjnTVGBh8mW4gyd-417hV0c8/view?usp=drivesdk"
+              target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+              <span>Download Resume</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right-col">
+
+          <div class="contact-channel-cards">
+
+            <div class="channel-card">
+              <div class="channel-icon-wrap">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">EMAIL</span>
+                <span class="channel-val">nabilqualitaakhsan@gmail.com</span>
+              </div>
+              <button class="channel-action-btn" id="copyEmailBtn" title="Salin Email">
+                <i class="fa-regular fa-copy"></i> Salin
+              </button>
+            </div>
+
+
+            <a href="https://github.com/nabilqualitaakhsan" target="_blank" rel="noopener noreferrer"
+              class="channel-card clickable">
+              <div class="channel-icon-wrap">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">GITHUB</span>
+                <span class="channel-val">github.com/nabilqualitaakhsan</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/nabil-qualita-akhsan-4bb2883a1" target="_blank"
+              rel="noopener noreferrer" class="channel-card clickable">
+              <div class="channel-icon-wrap">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">LINKEDIN</span>
+                <span class="channel-val">linkedin.com/in/nabil-qualita-akhsan</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+
+            <a href="https://wa.me/6285137142512?text=Halo%20Nabil,%20saya%20melihat%20portofolio%20Anda"
+              target="_blank" rel="noopener noreferrer" class="channel-card clickable">
+              <div class="channel-icon-wrap" style="color:#25d366;">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">WHATSAPP</span>
+                <span class="channel-val">+62 851 3714 2512</span>
+              </div>
+              <div class="channel-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- SEND ME A MESSAGE Form Button / Accordion (Gambar 5) -->
+          <div class="send-message-box">
+            <button class="btn btn-send-message" id="toggleFormBtn">
+              <span>SEND ME A MESSAGE</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <!-- Inline Form Dropdown -->
+            <div class="inline-message-form" id="inlineContactForm">
+              <form id="contactForm" action="https://formspree.io/f/xnjwdlgq" method="POST">
+                <div class="form-row">
+                  <div class="form-group-half">
+                    <label for="formNama" class="form-label">Nama Lengkap</label>
+                    <input type="text" id="formNama" name="nama" class="form-input" placeholder="Nama Anda" required />
+                  </div>
+                  <div class="form-group-half">
+                    <label for="formEmail" class="form-label">Alamat Email</label>
+                    <input type="email" id="formEmail" name="email" class="form-input" placeholder="email@domain.com"
+                      required />
+                  </div>
+                </div>
+                <div class="form-group-full">
+                  <label for="formSubjek" class="form-label">Subjek</label>
+                  <input type="text" id="formSubjek" name="subjek" class="form-input"
+                    placeholder="Topik atau Keperluan" />
+                </div>
+                <div class="form-group-full">
+                  <label for="formPesan" class="form-label">Pesan</label>
+                  <textarea id="formPesan" name="pesan" class="form-textarea" placeholder="Tuliskan pesan Anda..."
+                    required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit-message">
+                  <span>Kirim Pesan Sekarang</span> <i class="fa-regular fa-paper-plane"></i>
+                </button>
+                <div id="formStatus" class="form-status"></div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <div class="modal-backdrop" id="supportModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <span>☕</span> Traktir Kopi / Support Nabil
+        </h3>
+        <button class="modal-close" id="closeSupportBtn" aria-label="Tutup Modal">&times;</button>
+      </div>
+      <div class="qris-image-wrap">
+        <img src="assets/logo/qris.jpeg" alt="QRIS Nabil Qualita Akhsan" />
+      </div>
+      <p class="modal-desc">
+        Dukungan kamu sangat berarti untuk menyemangati perjalanan belajar &amp; eksplorasi teknologi saya. Scan via
+        GoPay, OVO, Dana, ShopeePay, atau Mobile Banking. Terima kasih banyak!
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-copyright">&copy; <span id="year"></span> Nabil Qualita Akhsan. All rights
+            reserved.</span>
+          <span class="footer-meta">S1 Teknik Informatika &bull; Universitas Negeri Surabaya (UNESA)</span>
+        </div>
+        <div class="footer-social-row">
+          <a href="https://github.com/nabilqualitaakhsan" target="_blank" rel="noopener noreferrer" title="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nabil-qualita-akhsan-4bb2883a1" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/m4ybemoon" target="_blank" rel="noopener noreferrer" title="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://dribbble.com/nabil-qualita-akhsan" target="_blank" rel="noopener noreferrer"
+            title="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="dist/js/script.js"></script>
+</body>
+
+</html>
